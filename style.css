@@ -15,8 +15,8 @@ body{
     font-family: 'Dongle', sans-serif;
 }
 .container{
-    width: 800px;
-    /* height: 350px; */
+    width: 700px;
+    height: 350px;
     border-radius: 50px;
     background: #dbd2d2;
     box-shadow:  20px 20px 60px #bab3b3,
@@ -30,6 +30,11 @@ body{
 }
 #output{
     font-size: 30px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 #btn, #copy-btn{
     padding: 15px 30px;
@@ -46,4 +51,13 @@ body{
 .footer-text{
     font-size: 25px;
     font-weight: 300;
+}
+
+@media (max-width: 767.98px) { 
+    .container{
+        width: 300px;
+    }
+    #output{
+        font-size: 24px;
+    }
 }
